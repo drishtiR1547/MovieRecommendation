@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>MovieFlix Premium</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>MovieFlix</h2>
+  <input id="search" placeholder="Search..." />
+</div>
+
+<!-- HERO -->
+<div id="hero" class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 id="hero-title"></h1>
+    <p>Watch instantly on MovieFlix</p>
+    <button id="hero-play">▶ Play</button>
+  </div>
+</div>
+
+<!-- ROWS -->
+<div id="rows"></div>
+
+<!-- PLAYER -->
+<div id="modal" class="modal">
+  <span onclick="closeModal()">✖</span>
+  <iframe id="video" allowfullscreen></iframe>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
