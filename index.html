@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Mood-Based Movie AI — Recommendations</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="brand">
+                <h1>🎬 Mood-Based Movie AI</h1>
+                <p class="tag">Pick a mood. Get curated movie picks with IMDb score, stars, poster and trailer.</p>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="controls">
+                <div class="control-row">
+                    <label for="mood">Select your mood</label>
+                    <select id="mood" class="dark-select" aria-label="Select mood">
+                        <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="nostalgic">Nostalgic</option>
+                        <option value="romantic">Romantic</option>
+                        <option value="adventurous">Adventurous</option>
+                        <option value="excited">Excited</option>
+                        <option value="lonely">Lonely</option>
+                        <option value="angry">Angry</option>
+                        <option value="relaxed">Relaxed</option>
+                        <option value="inspired">Inspired</option>
+                        <option value="curious">Curious</option>
+                        <option value="thrilled">Thrilled</option>
+                        <option value="horror">Horror</option>
+                        <option value="hopeful">Hopeful</option>
+                        <option value="melancholic">Melancholic</option>
+                        <option value="energetic">Energetic</option>
+                        <option value="sleepy">Sleepy</option>
+                        <option value="confused">Confused</option>
+                    </select>
+                </div>
+
+                <div class="control-row">
+                    <label for="count">Number of recommendations</label>
+                    <select id="count" class="count-select dark-select" aria-label="Number of recommendations">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="control-row actions">
+                    <button id="recommendBtn" class="btn primary">Get Recommendations</button>
+                    <button id="shuffleBtn" class="btn">Shuffle</button>
+                </div>
+            </section>
+
+            <section id="results" class="results">
+                <!-- Movie cards injected here by your script.js -->
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Built for mood-driven movie discovery • Posters are placeholders — replace with real poster URLs or
+                enable API fetch in script.js</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
